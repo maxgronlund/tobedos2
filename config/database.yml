@@ -1,0 +1,24 @@
+  
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: ember_development
+  pool: 5
+  username: synthmax
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: ember_test
+  pool: 5
+  username: synthmax
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: ember
+  pool: 5
+  username: synthmax
+  password: 
