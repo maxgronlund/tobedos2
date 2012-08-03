@@ -1,0 +1,2 @@
+module TobedosHelper
+end

@@ -1,0 +1,18 @@
+= form_for @tobedo do |f|
+  - if @tobedo.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@tobedo.errors.count, "error")} prohibited this tobedo from being saved:"
+      ul
+        - @tobedo.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :description
+    = f.text_area :description
+  .field
+    = f.label :done
+    = f.check_box :done
+  .actions = f.submit 'Save'

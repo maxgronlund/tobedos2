@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @tobedo.title
+p
+  strong Description:
+  = @tobedo.description
+p
+  strong Done:
+  = @tobedo.done
+
+= link_to 'Edit', edit_tobedo_path(@tobedo)
+'|
+= link_to 'Back', tobedos_path

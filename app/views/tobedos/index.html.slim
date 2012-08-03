@@ -1,0 +1,23 @@
+h1 Listing tobedos
+
+table
+  tr
+    th Title
+    th Description
+    th Done
+    th
+    th
+    th
+
+  - @tobedos.each do |tobedo|
+    tr
+      td = tobedo.title
+      td = tobedo.description
+      td = tobedo.done
+      td = link_to 'Show', tobedo
+      td = link_to 'Edit', edit_tobedo_path(tobedo)
+      td = link_to 'Destroy', tobedo, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Tobedo', new_tobedo_path
