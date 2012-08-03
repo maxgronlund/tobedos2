@@ -12,14 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require ember
-<<<<<<< HEAD
-=======
 //= require handlebars
 //= require ember
 //= require ember-data
 //= require_self
 //= require tobedos2
 Tobedos2 = Ember.Application.create();
->>>>>>> Name clash resolved
 //= require_tree .
