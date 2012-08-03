@@ -1,7 +1,14 @@
 Tobedos2::Application.routes.draw do
+<<<<<<< HEAD
   resources :tobedos
 
   root :to => 'tobedos#index'
+=======
+  get "home/index"
+  
+  root :to => 'home#index'
+
+>>>>>>> handlebars
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
